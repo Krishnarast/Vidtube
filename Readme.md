@@ -1,24 +1,114 @@
-# chai aur backend  series 
+# Vidtube – Video Management Platform
 
-This is a video series on backend with javascript
-- [Model link](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj?origin=share)
+Vidtube is a backend-focused video management application built using **Node.js, Express.js, MongoDB and Mongoose**.
 
-- [Video playlist](https://www.youtube.com/watch?v=EH3vGeqeIAo&list=PLu71SKxNbfoBGh_8p_NS-ZAh6v7HhYqHW)
+The application allows users to securely register and login, upload video content, store media files using Cloudinary, and manage their uploaded videos through REST APIs.
 
----
-# Summary of this project
+## Features
 
-This project is a complex backend project that is built with nodejs, expressjs, mongodb, mongoose, jwt, bcrypt, and many more. This project is a complete backend project that has all the features that a backend project should have.
-We are building a complete video hosting website similar to youtube with all the features like login, signup, upload video, like, dislike, comment, reply, subscribe, unsubscribe, and many more.
+* User registration and login
+* JWT-based authentication
+* Access and refresh token authentication
+* Secure logout
+* User profile management
+* Avatar upload
+* Video upload
+* Thumbnail upload
+* Cloudinary integration for media storage
+* View published videos
+* Search and sort videos
+* Update uploaded videos
+* Delete uploaded videos
+* Basic ownership authorization
 
-Project uses all standard practices like JWT, bcrypt, access tokens, refresh Tokens and many more. We have spent a lot of time in building this project and we are sure that you will learn a lot from this project.
+## Tech Stack
 
----
-Top Contributer to complete all TODOs
+* **Node.js**
+* **Express.js**
+* **MongoDB**
+* **Mongoose**
+* **JWT**
+* **Multer**
+* **Cloudinary**
+* **REST APIs**
 
-1. Spiderman (just sample)  [Link to Repo](https://www.youtube.com/@chaiaurcode)
+## How It Works
 
---- 
-## How to contribute in this open source Project
+### User Authentication
 
-First, please understand that this is not your regular project to merge your PR. This repo requires you to finish all assignments that are in controller folder. We don't accept half work, please finish all controllers and then reach us out on [Discord](https://hitesh.ai/discord) or [Twitter](https://twitter.com/@hiteshdotcom) and after checking your repo, I will add link to your repo in this readme.
+```text
+User
+ ↓
+Register / Login
+ ↓
+JWT Authentication
+ ↓
+Access Protected APIs
+```
+
+### Video Upload
+
+```text
+User
+ ↓
+Upload Video + Thumbnail
+ ↓
+Multer
+ ↓
+Cloudinary
+ ↓
+Cloudinary URL
+ ↓
+MongoDB
+```
+
+MongoDB stores the video information such as title, description, duration, views, owner and the Cloudinary URLs instead of storing the actual video files.
+
+## Main API Operations
+
+### User
+
+* Register
+* Login
+* Logout
+* Refresh Access Token
+* Get Current User
+* Update Account Details
+* Update Avatar
+
+### Video
+
+* Upload Video
+* Get All Videos
+* Get Video by ID
+* Search Videos
+* Sort Videos
+* Update Video
+* Delete Video
+
+## Future Scope
+
+The backend can be extended into an **educational video platform** where faculty can upload lecture videos and students can access published course content.
+
+Possible future features:
+
+* Student and faculty roles
+* Course and subject management
+* Lecture-wise video organization
+* Admin dashboard
+* Access control based on roles
+* Course-specific video content
+
+## Learning Outcomes
+
+Through this project, I worked with:
+
+* REST API development
+* JWT authentication
+* Middleware
+* MongoDB and Mongoose
+* File upload handling using Multer
+* Cloudinary integration
+* CRUD operations
+* Authentication and authorization
+* API-based backend architecture
