@@ -1,7 +1,7 @@
 {
-  "name": "chai-backend",
+  "name": "vidtube",
   "version": "1.0.0",
-  "description": "a backend at chai aur code channel - youtube",
+  "description": "video streaming backend",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,9 @@
   "keywords": [
     "javascript",
     "backend",
-    "chai"
+    "video"
   ],
-  "author": "Hitesh Choudhary",
+  "author": "Krishna Rastogi",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.1",
